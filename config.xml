@@ -2,16 +2,17 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     xmlns:android = "http://schemas.android.com/apk/res/android"
-    id        = "com.bastisapp.driver"
-    versionCode = "18"
-    version   = "8.0"
+    id        = "com.paymeal.driver"
+    versionCode = "1.0"
+    version   = "1.0"
     >
-    <name>Karenderia Driver App</name>
+    <name>PayMeal Driver</name>
     <description>
-        Karenderia Driver App
+        PayMeal Driver 
     </description>
-    <author email="bastikikang@gmail.com" href="http://cordova.io">
-        bastisapp.com
+  </description>
+    <author email="pivotdesignmedia@gmail.com" href="http://paymeal.app">
+        paymeal.app
     </author>
     <icon src="icon.png" />           
     <content src="index.html" />
@@ -74,45 +75,46 @@
     <preference name="android-targetSdkVersion" value="26" />
     <preference name="DisallowOverscroll" value="true" />
     
-    <platform name="ios">    
+       <platform name="ios">    
 	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-	        <string>Karenderia want to always use your location</string>
+	        <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about Karenderia.</string>
 	    </config-file>
 	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-	        <string>Karenderia wants to use your location</string>
-	    </config-file>
-	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
-	        <string>Karenderia wants to use your location</string>
+	        <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about PayMeal.</string>
 	    </config-file>
 	</platform>   
 	
 	<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-    <string>need camera access to take pictures</string>
+    <string>Enable PayMeal to access your camera to take photos of you and to save as profile picture.</string>
 	</edit-config>
 	
 	<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>need to photo library access to get pictures from there</string>
+	    <string>Enable PayMeal to access your photo library to get pictures from there.</string>
 	</edit-config>
 	
 	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>need location access to find things nearby</string>
+	    <string>This allows us to use your location to find restaurant nearby.</string>
 	</edit-config>
 	
 	<edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>need location access to find things nearby</string>
+	    <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about PayMeal.</string>
+	</edit-config>
+	
+	<edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+	    <string>This allows us to use your location to find restaurant nearby.</string>
 	</edit-config>
 	
 	<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>need to photo library access to save pictures there</string>
+	    <string>Enable PayMeal to access your photo library to save pictures there.</string>
 	</edit-config>
 	
 	<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
-      <string>need microphone access to record sounds</string>
-    </edit-config>
-			
-    <edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>need location access to find things nearby</string>
-	</edit-config>
+      <string>PayMeal need microphone access to record sounds</string>
+    </edit-config>        
+    
+    <edit-config target="NSBluetoothAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+      <string>This allows us to facilitate more accurately, keeping you in the loop about PayMeal.</string>
+    </edit-config>  
 		
 	<platform name="android">
 	
@@ -159,6 +161,7 @@
 		<icon height="144" platform="ios" src="res/icons/ios/icon-72@2x.png" width="144" />
 		<icon height="76" platform="ios" src="res/icons/ios/icon-76.png" width="76" />
 		<icon height="152" platform="ios" src="res/icons/ios/icon-76@2x.png" width="152" />
+		<icon height="167" platform="ios" src="res/icons/ios/icon-167.png" width="167" />
 		<icon height="29" platform="ios" src="res/icons/ios/icon-small.png" width="29" />
 		<icon height="58" platform="ios" src="res/icons/ios/icon-small@2x.png" width="58" />
 		<icon height="87" platform="ios" src="res/icons/ios/icon-small@3x.png" width="87" />
