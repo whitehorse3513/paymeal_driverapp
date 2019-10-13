@@ -84,37 +84,7 @@
 	    </config-file>
 	</platform>   
 	
-	<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-    <string>Enable PayMeal to access your camera to take photos of you and to save as profile picture.</string>
-	</edit-config>
-	
-	<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>Enable PayMeal to access your photo library to get pictures from there.</string>
-	</edit-config>
-	
-	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>This allows us to use your location to find restaurant nearby.</string>
-	</edit-config>
-	
-	<edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about PayMeal.</string>
-	</edit-config>
-	
-	<edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>This allows us to use your location to find restaurant nearby.</string>
-	</edit-config>
-	
-	<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>Enable PayMeal to access your photo library to save pictures there.</string>
-	</edit-config>
-	
-	<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
-      <string>PayMeal need microphone access to record sounds</string>
-    </edit-config>        
-    
-    <edit-config target="NSBluetoothAlwaysUsageDescription" file="*-Info.plist" mode="merge">
-      <string>This allows us to facilitate more accurately, keeping you in the loop about PayMeal.</string>
-    </edit-config>  
+
 		
 	<platform name="android">
 	
