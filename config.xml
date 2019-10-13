@@ -2,17 +2,16 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     xmlns:android = "http://schemas.android.com/apk/res/android"
-    id        = "com.paymeal.driver"
-    versionCode = "1"
-    version   = "1.0"
+    id        = "com.bastisapp.driver"
+    versionCode = "18"
+    version   = "8.0"
     >
-    <name>PayMeal Driver</name>
+    <name>Karenderia Driver App</name>
     <description>
-        PayMeal Driver 
+        Karenderia Driver App
     </description>
-  </description>
-    <author email="pivotdesignmedia@gmail.com" href="http://paymeal.app">
-        paymeal.app
+    <author email="bastikikang@gmail.com" href="http://cordova.io">
+        bastisapp.com
     </author>
     <icon src="icon.png" />           
     <content src="index.html" />
@@ -48,7 +47,7 @@
     </plugin>
         
     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" spec="5.0.4" >
-       <variable name="GOOGLE_API_KEY_FOR_ANDROID" value="AIzaSyBMGEAp9dZ242jLnqDMo525r1g2EWQqfaI" />
+       <variable name="GOOGLE_API_KEY_FOR_ANDROID" value="" />
     </plugin>	
         
            
@@ -75,46 +74,45 @@
     <preference name="android-targetSdkVersion" value="26" />
     <preference name="DisallowOverscroll" value="true" />
     
-       <platform name="ios">    
+    <platform name="ios">    
 	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-	        <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about Karenderia.</string>
+	        <string>Karenderia want to always use your location</string>
 	    </config-file>
 	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-	        <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about PayMeal.</string>
+	        <string>Karenderia wants to use your location</string>
+	    </config-file>
+	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+	        <string>Karenderia wants to use your location</string>
 	    </config-file>
 	</platform>   
 	
 	<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-    <string>Enable PayMeal to access your camera to take photos of you and to save as profile picture.</string>
+    <string>need camera access to take pictures</string>
 	</edit-config>
 	
 	<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>Enable PayMeal to access your photo library to get pictures from there.</string>
+	    <string>need to photo library access to get pictures from there</string>
 	</edit-config>
 	
 	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>This allows us to use your location to find restaurant nearby.</string>
+	    <string>need location access to find things nearby</string>
 	</edit-config>
 	
 	<edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about PayMeal.</string>
-	</edit-config>
-	
-	<edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>This allows us to use your location to find restaurant nearby.</string>
+	    <string>need location access to find things nearby</string>
 	</edit-config>
 	
 	<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>Enable PayMeal to access your photo library to save pictures there.</string>
+	    <string>need to photo library access to save pictures there</string>
 	</edit-config>
 	
 	<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
-      <string>PayMeal need microphone access to record sounds</string>
-    </edit-config>        
-    
-    <edit-config target="NSBluetoothAlwaysUsageDescription" file="*-Info.plist" mode="merge">
-      <string>This allows us to facilitate more accurately, keeping you in the loop about PayMeal.</string>
-    </edit-config>  
+      <string>need microphone access to record sounds</string>
+    </edit-config>
+			
+    <edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+	    <string>need location access to find things nearby</string>
+	</edit-config>
 		
 	<platform name="android">
 	
@@ -161,7 +159,6 @@
 		<icon height="144" platform="ios" src="res/icons/ios/icon-72@2x.png" width="144" />
 		<icon height="76" platform="ios" src="res/icons/ios/icon-76.png" width="76" />
 		<icon height="152" platform="ios" src="res/icons/ios/icon-76@2x.png" width="152" />
-		<icon height="167" platform="ios" src="res/icons/ios/icon-167.png" width="167" />
 		<icon height="29" platform="ios" src="res/icons/ios/icon-small.png" width="29" />
 		<icon height="58" platform="ios" src="res/icons/ios/icon-small@2x.png" width="58" />
 		<icon height="87" platform="ios" src="res/icons/ios/icon-small@3x.png" width="87" />
