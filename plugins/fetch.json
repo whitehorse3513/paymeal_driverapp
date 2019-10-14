@@ -1,0 +1,33 @@
+{
+    "nl.x-services.plugins.insomnia": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-insomnia@4.1.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-mauron85-background-geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-mauron85-background-geolocation@3.0.0-alpha.46"
+        },
+        "is_top_level": true,
+        "variables": {
+            "GOOGLE_PLAY_SERVICES_VERSION": "11.0.1",
+            "ANDROID_SUPPORT_LIBRARY_VERSION": "23+",
+            "ALWAYS_USAGE_DESCRIPTION": "App requires background tracking enabled",
+            "MOTION_USAGE_DESCRIPTION": "App requires motion detection"
+        }
+    },
+    "uk.co.workingedge.phonegap.plugin.launchnavigator": {
+        "source": {
+            "type": "registry",
+            "id": "uk.co.workingedge.phonegap.plugin.launchnavigator@5.0.4"
+        },
+        "is_top_level": true,
+        "variables": {
+            "GOOGLE_API_KEY_FOR_ANDROID": ""
+        }
+    }
+}

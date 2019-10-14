@@ -1,0 +1,89 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "*-Info.plist": {
+                "parents": {
+                    "NSCameraUsageDescription": [
+                        {
+                            "xml": "<string>PayMeal need camera access to take pictures</string>",
+                            "count": 1,
+                            "mode": "merge",
+                            "id": "config.xml"
+                        }
+                    ],
+                    "NSPhotoLibraryUsageDescription": [
+                        {
+                            "xml": "<string>PayMeal need to photo library access to get pictures from there</string>",
+                            "count": 1,
+                            "mode": "merge",
+                            "id": "config.xml"
+                        }
+                    ],
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string>PayMeal need location access to find things nearby</string>",
+                            "count": 1,
+                            "mode": "merge",
+                            "id": "config.xml"
+                        }
+                    ],
+                    "NSLocationAlwaysAndWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string>PayMeal need location access to find things nearby</string>",
+                            "count": 1,
+                            "mode": "merge",
+                            "id": "config.xml"
+                        }
+                    ],
+                    "NSPhotoLibraryAddUsageDescription": [
+                        {
+                            "xml": "<string>need to photo library access to save pictures there</string>",
+                            "count": 1,
+                            "mode": "merge",
+                            "id": "config.xml"
+                        }
+                    ],
+                    "NSMicrophoneUsageDescription": [
+                        {
+                            "xml": "<string>PayMeal need microphone access to record sounds</string>",
+                            "count": 1,
+                            "mode": "merge",
+                            "id": "config.xml"
+                        }
+                    ],
+                    "NSLocationAlwaysUsageDescription": [
+                        {
+                            "xml": "<string>PayMealneed location access to find things nearby</string>",
+                            "count": 1,
+                            "mode": "merge",
+                            "id": "config.xml"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "nl.x-services.plugins.insomnia": {
+            "PACKAGE_NAME": "com.paymeal.driver"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/nl.x-services.plugins.insomnia/www/Insomnia.js",
+            "id": "nl.x-services.plugins.insomnia.Insomnia",
+            "pluginId": "nl.x-services.plugins.insomnia",
+            "clobbers": [
+                "window.plugins.insomnia"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "nl.x-services.plugins.insomnia": "4.1.0"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "nl.x-services.plugins.insomnia": {
+            "PACKAGE_NAME": "com.paymeal.driver"
+        }
+    },
+    "dependent_plugins": {}
+}
