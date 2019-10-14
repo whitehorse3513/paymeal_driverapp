@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "927766997051",
+    "firebase_url": "https://paymeal-driver.firebaseio.com",
+    "project_id": "paymeal-driver",
+    "storage_bucket": "paymeal-driver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927766997051:android:15d081e2440561da56541e",
+        "android_client_info": {
+          "package_name": "com.paymeal.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927766997051-3gnr7ocgum75g0stt889fjepjgragl4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_S1tFEwmyZSmuHzBc7syz2XVEsrre7tA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927766997051-3gnr7ocgum75g0stt889fjepjgragl4v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
