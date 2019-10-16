@@ -176,7 +176,9 @@ color:#fff;
 }
 
 .page--login-page .text-input--material{
-background:transparent linear-gradient(to top, transparent 1px, #fff 3px) no-repeat scroll center bottom / 100% 2px padding-box;
+/* background:transparent linear-gradient(to top, transparent 1px, #fff 3px) no-repeat scroll center bottom / 100% 2px padding-box;*/
+
+	background:transparent no-repeat scroll center bottom / 100% 2px padding-box;
 }
 
 p,

@@ -166,7 +166,7 @@ text-align:left;
 }
 
 .page--login-page .page__background{
-background:#09293A;
+background:#9E000B;
 }
 
 .page--login-page p,
@@ -176,7 +176,9 @@ color:#fff;
 }
 
 .page--login-page .text-input--material{
-background:transparent linear-gradient(to top, transparent 1px, #fff 3px) no-repeat scroll center bottom / 100% 2px padding-box;
+/* background:transparent linear-gradient(to top, transparent 1px, #fff 3px) no-repeat scroll center bottom / 100% 2px padding-box;*/
+
+	background:transparent no-repeat scroll center bottom / 100% 2px padding-box;
 }
 
 p,
@@ -216,7 +218,7 @@ color:#505050;
 }
 
 .text-input--blue-field{
-background:#294553;
+background:#9E000B;
 color:#fff;
 padding:3px 8px;
 }
@@ -236,7 +238,7 @@ color:#fff;
 }
 
 .page--login-page ons-input .text-input__label {
-color:#009688;
+color:#9E000B;
 }
  
 .inner .button--material--flat,
@@ -250,7 +252,7 @@ text-transform:none;
 -webkit-box-shadow: none;
 -moz-box-shadow: none;
 box-shadow: none;
-background:#009688;
+background:#9E000B;
 color:#fff;
 }
 
@@ -603,7 +605,7 @@ color:#fff;
 .navigation-bar--ktransparent-toolbar,
 .button--green-button
 {
-background:#009688;
+background:#9E000B;
 color:#fff;
 }
 
@@ -656,7 +658,7 @@ margin-top:30px;
 }
 
 .list--list-blue-bg .list__item{
-background:#009688;
+background:#9E000B;
 color:#fff;
 }
 .top40{
@@ -712,7 +714,7 @@ display:block;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #009688;
+  background-color: #9E000B;
   opacity: 0.6;
   position: absolute;
   top: 0;
