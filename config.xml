@@ -3,8 +3,8 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
     xmlns:android = "http://schemas.android.com/apk/res/android"
     id        = "com.paymeal.driver"
-    versionCode = "1.0"
-    version   = "1.0"
+    versionCode = "1.1"
+    version   = "1.1"
     >
     <name>PayMeal Driver </name>
     <description>
@@ -71,48 +71,49 @@
       
     <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="26" />
+    <preference name="android-targetSdkVersion" value="28" />
     <preference name="DisallowOverscroll" value="true" />
     
     <platform name="ios">    
 	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-	        <string>PayMeal want to always use your location</string>
+	        <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about Karenderia.</string>
 	    </config-file>
 	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-	        <string>PayMeal wants to use your location</string>
-	    </config-file>
-	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
-	        <string>PayMeal wants to use your location</string>
+	        <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about PayMeal.</string>
 	    </config-file>
 	</platform>   
 	
 	<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-    <string>PayMeal need camera access to take pictures</string>
+    <string>Enable PayMeal to access your camera to take photos of you and to save as profile picture.</string>
 	</edit-config>
 	
 	<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>PayMeal need to photo library access to get pictures from there</string>
+	    <string>Enable PayMeal to access your photo library to get pictures from there.</string>
 	</edit-config>
 	
 	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>PayMeal need location access to find things nearby</string>
+	    <string>This allows us to use your location to find restaurant nearby.</string>
 	</edit-config>
 	
 	<edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>PayMeal need location access to find things nearby</string>
+	    <string>This allows us to use your location to provide you a nearby restaurant, and to facilitate more accurately, keeping you in the loop about PayMeal.</string>
+	</edit-config>
+	
+	<edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+	    <string>This allows us to use your location to find restaurant nearby.</string>
 	</edit-config>
 	
 	<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>need to photo library access to save pictures there</string>
+	    <string>Enable PayMeal to access your photo library to save pictures there.</string>
 	</edit-config>
 	
 	<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
       <string>PayMeal need microphone access to record sounds</string>
-    </edit-config>
-			
-    <edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
-	    <string>PayMealneed location access to find things nearby</string>
-	</edit-config>
+    </edit-config>        
+    
+    <edit-config target="NSBluetoothAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+      <string>This allows us to facilitate more accurately, keeping you in the loop about PayMeal.</string>
+    </edit-config> 
 		
 	<platform name="android">
 	
